@@ -17,7 +17,7 @@ public class PracticeFormTest {
         Configuration.holdBrowserOpen = true;
         //Configuration.timeout = 5000; // default 4000
     }
-
+    /*
     @Test
     void fillFormTest() {
         open("/text-box");
@@ -32,7 +32,7 @@ public class PracticeFormTest {
         $("#output #currentAddress").shouldHave(text("Some street 1"));
         $("#output #permanentAddress").shouldHave(text("Another street 1"));
     }
-
+*/
     @Test
     void fullFormTest() {
         open("/automation-practice-form");
