@@ -18,7 +18,6 @@ public class PracticeFormTest {
         //Configuration.timeout = 5000; // default 4000
     }
     /*
-
     @Test
     void fillFormTest() {
         open("/text-box");
