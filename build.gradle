@@ -1,0 +1,22 @@
+plugins {
+    id 'java-library' //Указываем какой язык программирования используем
+}
+
+repositories {
+    mavenCentral() //указываем откуда мы хотим забирать библиотеки для использования
+}
+
+dependencies { //Зависимости
+    testImplementation (
+            "com.codeborne:selenide:6.19.1", //Добавили селенид
+            "org.junit.jupiter:junit-jupiter:5.10.0", //подключаем junit (junit-jupiter подключает все библиотеки из которых состоит junit)
+            "org.slf4j:slf4j-simple:2.0.7")
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8' //Если проблема с кодировкой
+}
+
+test {
+    useJUnitPlatform() //Для добавления зеленой кнопки запуска тестов в среде разработки
+}
