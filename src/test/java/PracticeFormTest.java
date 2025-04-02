@@ -69,7 +69,5 @@ public class PracticeFormTest {
         $(".table-responsive").shouldHave(text("panda.jpg"));
         $(".table-responsive").shouldHave(text("Russia, Penza"));
         $(".table-responsive").shouldHave(text("Rajasthan Jaiselmer"));
-
     }
-
 }
